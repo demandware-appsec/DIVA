@@ -1,5 +1,6 @@
 package com.demandware.vulnapp.challenge.impl;
 
+import java.util.AbstractMap.SimpleEntry;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -75,6 +76,11 @@ public class RNGChallenge extends AbstractChallenge{
 			}
 		}
 		return isCorrect;
+	}
+
+	public SimpleEntry<String,String> getNextRNGs(DIVAServletRequestWrapper req){
+		Random rand = new Random(getSeed());
+		return new SimpleEntry<String,String>(String.valueOf(rand.nextInt()), String.valueOf(rand.nextInt()));
 	}
 	
 	private void setNewRandomSeed(long newValue){

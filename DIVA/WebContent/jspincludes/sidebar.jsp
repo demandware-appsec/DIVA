@@ -203,7 +203,7 @@ private String makeChallengeLine(ChallengeInfo cInfo, SessionStorage sessionStor
 			<div class="sidebar-panel">
   				<div class="sidebar-panel-header won-header" align="center"><strong>You Won!</strong></div>
   				<div class="sidebar-panel-body won-body" align="center">
-    				Congratulations! You've beaten the game. For recognition, please submit your username along with a writeup of how you beat these challenges to AppSec@demandware.com.
+    				Congratulations! You've beaten the game. 
   				</div>
 			</div>
 		<%
