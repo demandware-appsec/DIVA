@@ -3,15 +3,13 @@
 if [ "$TRAVIS_REPO_SLUG" == "demandware-appsec/DIVA" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
 
   echo -e "Creating war file"
-  ##
-  #### CREATE WAR
-  ##
+  mvn -f DIVA/pom.xml install
 
   echo -e "Publishing war for $TRAVIS_JDK_VERSION"
   jdkver=$(echo -n $TRAVIS_JDK_VERSION | tail -c 4)
 
   mkdir $HOME/war-latest/
-  ##### cp DIVA/target/*.war $HOME/war-latest/
+  cp DIVA/target/*.war $HOME/war-latest/
   echo -e "Copied war"
 
   cd $HOME
