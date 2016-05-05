@@ -1,0 +1,1 @@
+Star ruby is a ruby that displays asterism, a six-rayed star that shimmers over the surface of the stone when it is moved.

@@ -1,0 +1,25 @@
+#standings, #challenge{
+	float:right;
+	width:73%;
+}
+
+#sidebar{
+	float:left;
+	width:25%;
+	text-align:center;
+}
+
+#header{
+	
+}
+
+#standings table{
+	width:100%; 
+	text-align:center; 
+	border-collapse: collapse;
+}
+
+.navbar-nav > li{
+  padding-left:5px;
+  padding-right:5px;
+}
