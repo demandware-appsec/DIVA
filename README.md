@@ -3,6 +3,7 @@
 
 ##Overview
 The Demandware Intentionally Vulnerable WebApp is a teaching tool to help those interested in security test their skills on increasingly tough challenges. There are a total of 20 challenges ranging from very simple HTML editing to "decrypting" and AES string. The applications has further instructions and suggestions for playing the game once started.
+The application is mostly self-contained and doesn't require any setup besides an application server. It contains a database implementation, but is in-memory only and transient.
 
 ##Important Disclaimers
 The code contained in this application is intentionally terrible. Almost no part of this code base should be used in any other applications including side projects. The entire codebase is riddled with vulnerabilities even outside of the actual challenges. 
@@ -47,4 +48,9 @@ See the [Hints Page]() for help with specific challenges. Hints for each challen
 Demandware AppSec uses this CTF as a means to help teach different departments about Application Security and provide a testbed for interested individuals to try "real-world" attacks. We also use this CTF to help identify Security Champions and will be hosted in the future during conferences and hackathons both internally and with customers.
 
 ## License
+###Code
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+###Images
+All images used in SQL database are [Creative Commons "No Rights Reserved"](https://creativecommons.org/about/cc0/)
+
