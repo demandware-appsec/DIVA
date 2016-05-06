@@ -51,6 +51,15 @@
 												When you return, you'll be able to use those same credentials to log back in and resume your challenges.
 											</p>
 											<p>
+												Your goal is to collect a Flag for each challenge and paste it into the Check Flag to the left.
+												<br/>
+												Flags will always start with the word "Flag:"and end with 40 hex characters e.g.
+												<br/>
+												Flag: 1e6742f6e1bbf5e49e1305866f81c8695a56a1d5
+												<br/>
+												Find a flag for each challenge to win!
+											</p>
+											<p>
 												While there are technically no rules, there are several guidelines and requests:
 												<br/>
 												1. Attack only this site.

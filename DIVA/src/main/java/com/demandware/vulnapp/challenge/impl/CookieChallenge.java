@@ -21,7 +21,7 @@ import com.demandware.vulnapp.util.Helpers;
 public class CookieChallenge extends AbstractChallenge {
 
 	public static final String RED_HERRING = "red_herring";
-	public static final String COOKIE_NAME = "challenge6";
+	public static final String COOKIE_NAME = "challenge_access";
 	public static final String ACCESS_KEY = "access_granted";
 	private static final int MAX_AGE = 5*60; //5mins
 	
