@@ -42,7 +42,7 @@ mvn -f DIVA/pom.xml install
 and look in DIVA/target/ for DIVA.war. You may deploy this in any appserver that supports Servlets 3.1
 
 ##Hints
-See the [Hints Page]() for help with specific challenges. Hints for each challenge are on their own pages in rollover text.
+See the [Hints Page](http://demandware-appsec.github.io/DIVA/hints/) for help with specific challenges. Hints for each challenge are on their own pages in rollover text.
 
 ##Usage Suggestions
 Demandware AppSec uses this CTF as a means to help teach different departments about Application Security and provide a testbed for interested individuals to try "real-world" attacks. We also use this CTF to help identify Security Champions and will be hosted in the future during conferences and hackathons both internally and with customers.
