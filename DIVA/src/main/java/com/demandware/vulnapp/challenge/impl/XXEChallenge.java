@@ -39,8 +39,7 @@ public class XXEChallenge extends AbstractChallenge {
 	protected XXEChallenge(String name) {
 		super(name);
 		this.password = SecureRandomUtil.generateRandomHexString(6);
-		String homedir = System.getProperty("user.home");
-		this.flagFile = new File(homedir, "flag.txt");
+		this.flagFile = new File(".", "flag.txt");
 		setupPasswordFile();
 	}
 	
