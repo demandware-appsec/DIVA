@@ -34,7 +34,7 @@ public class MD5Challenge extends AbstractChallenge {
 	private File b64WarLocation = null;
 	private boolean b64WarMade = false;
 	
-	private static final String MD5_FILE_NAME = "unknown";
+	private static final String MD5_FILE_NAME = "unknown.txt";
 	public static final String DOWNLOAD_PARAM = "download";
 	private static final String CHALL_FOLDER = "MD5Files";
 	
@@ -42,7 +42,11 @@ public class MD5Challenge extends AbstractChallenge {
 		super(name);
 		String basedir = DivaApp.getInstance().getInformation(Dictionary.SERVLET_ROOT);
 		File base = Paths.get(basedir, MD5Challenge.CHALL_FOLDER).toFile();
+		if(!base.exists()){
+			base.mkdirs();
+		}
 		this.b64WarLocation = new File(base, MD5_FILE_NAME );
+		
 		generateB64FileForWar();
 	}
 

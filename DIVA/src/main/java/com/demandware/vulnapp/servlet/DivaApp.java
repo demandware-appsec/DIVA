@@ -103,11 +103,12 @@ public class DivaApp {
 			if(webapps != null){
 				found = true;
 				System.out.println("Found Tomcat Root: " + search.getPath());
-			}
-			search = search.getParentFile();
-			if(search == null){
-				System.out.println("Could not find Tomcat Root");
-				break;
+			}else{
+				search = search.getParentFile();
+				if(search == null){
+					System.out.println("Could not find Tomcat Root");
+					break;
+				}
 			}
 		}
 		

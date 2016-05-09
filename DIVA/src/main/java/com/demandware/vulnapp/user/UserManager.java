@@ -39,6 +39,7 @@ public class UserManager {
 	private UserManager(){
 		this.currentUsers = new ConcurrentLinkedQueue<User>();
 		String loc = DivaApp.getInstance().getInformation(Dictionary.RESTORE_FOLDER);
+
 		if(loc.length() == 0){
 			this.restoreFolder = new File("./DIVA_backup_users/");
 		}else{
