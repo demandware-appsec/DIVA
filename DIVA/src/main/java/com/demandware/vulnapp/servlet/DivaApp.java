@@ -54,7 +54,6 @@ public class DivaApp {
 	void setup(FilterConfig fConfig){
 		File root = new File(fConfig.getServletContext().getRealPath("/"));
 		
-		
 		this.appInformation.put(Dictionary.SERVLET_ROOT, root.getPath());
 		this.appInformation.put(Dictionary.CHALLENGES_ROOT, "challenges");
 		this.appInformation.put(Dictionary.READABLE_JSP_LOC, "readable");
@@ -63,7 +62,7 @@ public class DivaApp {
 		
 		File tomcatRoot = findTomcatRoot(root);
 		File restore = tomcatRoot == null ? null : new File(tomcatRoot, "DIVA_backup_users");
-		System.out.println("RESTORE: " + restore);
+
 		this.appInformation.put(Dictionary.TOMCAT_ROOT, tomcatRoot == null ? "" : tomcatRoot.getPath());
 		this.appInformation.put(Dictionary.DEBUG_USER, String.valueOf(Helpers.isTruthy(fConfig.getInitParameter("debug.user"))));
 		this.appInformation.put(Dictionary.RESTORE_FOLDER, restore == null ? "" : restore.getPath());
@@ -102,11 +101,8 @@ public class DivaApp {
 		while(!found){
 			File webapps = Helpers.getFileOrFolderInSubDir(search, "webapps", false);
 			if(webapps != null){
-				File war = Helpers.getFileOrFolderInSubDir(webapps, this.appInformation.get(Dictionary.WAR_NAME), true);
-				if(war != null){
-					found = true;
-					System.out.println("Found Tomcat Root: " + search.getPath());
-				}
+				found = true;
+				System.out.println("Found Tomcat Root: " + search.getPath());
 			}
 			search = search.getParentFile();
 			if(search == null){

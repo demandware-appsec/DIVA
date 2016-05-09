@@ -83,6 +83,9 @@ public class MD5Challenge extends AbstractChallenge {
 			root.mkdirs();
 			String warName = DivaApp.getInstance().getInformation(Dictionary.WAR_NAME);
 			File war = Helpers.findFile(root, warName);
+			if(war == null){
+				war = Helpers.findFile(root, "DIVA.war");
+			}
 			System.out.println("Copying War from " + war.getAbsolutePath());
 			if(war != null){
 				try(InputStream is = new BufferedInputStream(new Base64InputStream(new FileInputStream(war), true)); 
