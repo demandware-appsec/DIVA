@@ -22,20 +22,20 @@
 			<span class="sr-only">Toggle</span> <span class="icon-bar"></span> <span
 				class="icon-bar"></span> <span class="icon-bar"></span>
 		</button>
-		<a href="/DIVA/overview.jsp" class="navbar-brand"><b>DIVA</b></a>
+		<a href="overview.jsp" class="navbar-brand"><b>DIVA</b></a>
 	</div>
 	<nav class="collapse navbar-collapse" role="navigation">
 
 		<ul class="nav navbar-nav">
-			<li><a href="/DIVA/overview.jsp"><i
+			<li><a href="overview.jsp"><i
 					class="glyphicon glyphicon-home"></i> Home</a></li>
-			<li><a href="/DIVA/standings.jsp" role="button"><i
+			<li><a href="standings.jsp" role="button"><i
 					class="glyphicon glyphicon-stats"></i> Standings</a></li>
-			<li><a href="#">Points&nbsp;&nbsp;<span class="badge"><%=sessionStore.getUser().getPoints() %></span></a></li>
+			<li><a href="standings.jsp">Points&nbsp;&nbsp;<span class="badge"><%=sessionStore.getUser().getPoints() %></span></a></li>
 		</ul>
 		<%if(shouldShowLogin){ %>
 		<form class="navbar-form navbar-right" method=POST autocomplete="off"
-			action="/DIVA/overview.jsp">
+			action="overview.jsp">
 			<input type="hidden" name="<%=Dictionary.CLEAR_SESSION_PARAM %>"
 				value="true">
 			<button type="submit" class="btn round btn-danger"
@@ -76,7 +76,7 @@
 		<%}%>
 		<%if(!shouldShowLogin){ %>
 		<form class="navbar-form navbar-right" method=POST autocomplete="off"
-			action="/DIVA/overview.jsp">
+			action="overview.jsp">
 			<input type="hidden" name="<%=Dictionary.CLEAR_SESSION_PARAM %>"
 				value="true">
 			<button type="submit" class="btn round btn-danger" value="Log Out">

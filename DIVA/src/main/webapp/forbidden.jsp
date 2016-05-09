@@ -27,7 +27,6 @@
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/mJZZNHekEQw?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
 										</div>
 										<a href="index.html">Home</a>

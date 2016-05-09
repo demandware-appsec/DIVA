@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    
-<!-- <link rel="stylesheet" type="text/css" href="/DIVA/css/master.css"> -->
-<link rel="stylesheet" href="/DIVA/css/bootstrap.min.css">
-<link rel="stylesheet" href="/DIVA/css/styles.css">
-<script src="/DIVA/js/jquery-1.11.3.min.js"></script>
-<script src="/DIVA/js/bootstrap.min.js"></script>
-<script src="/DIVA/js/scripts.js"></script>
+
+<base href="<%=request.getContextPath() == "" ? "" : java.net.URI.create(request.getRequestURL().toString()).resolve(request.getContextPath()) %>/" />    
+<!-- <link rel="stylesheet" type="text/css" href="css/master.css"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 
 
 <script type="text/javascript">

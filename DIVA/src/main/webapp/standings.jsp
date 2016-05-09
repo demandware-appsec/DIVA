@@ -55,7 +55,7 @@ int numActive = SessionManager.getInstance().getActiveSessions();
 										<%
 										if(!UserManager.getInstance().showLogin(sessionStore.getUser())){
 										 %>
-										<form class="navbar-form navbar-right" method="POST" autocomplete="off" action="/DIVA/overview.jsp"
+										<form class="navbar-form navbar-right" method="POST" autocomplete="off" action="overview.jsp"
 												onsubmit="return confirm('You cannot undo this. Are you sure your want to delete?');">
 											<input type="hidden" name="<%=Dictionary.DELETE_PARAM %>">
 											<button type="submit" class="btn round btn-danger" value="Delete Me">

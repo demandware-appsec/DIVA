@@ -129,7 +129,7 @@ private String makeChallengeLine(ChallengeInfo cInfo, SessionStorage sessionStor
 			} else if(cInfo.getChallengeType().equals(ChallengeType.MD5) && !sessionStore.getUser().isComplete(cInfo.getChallengeType())){
 				sb.append("<span>Pattern? What pattern?</span>");
 			} else{
-				sb.append("<a href=\"/DIVA/challenges/");
+				sb.append("<a href=\"challenges/");
 				sb.append(cInfo.getLinkValue()); 
 				sb.append(".jsp\"/>"); 
 				

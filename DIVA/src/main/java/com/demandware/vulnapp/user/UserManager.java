@@ -44,6 +44,7 @@ public class UserManager {
 		}else{
 			this.restoreFolder = new File(loc);
 		}
+		System.out.println("RESU: " + this.restoreFolder);
 	}
 
 	public boolean showLogin(User user){

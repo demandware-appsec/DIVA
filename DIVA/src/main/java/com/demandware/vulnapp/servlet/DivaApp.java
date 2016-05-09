@@ -63,7 +63,7 @@ public class DivaApp {
 		
 		File tomcatRoot = findTomcatRoot(root);
 		File restore = tomcatRoot == null ? null : new File(tomcatRoot, "DIVA_backup_users");
-		
+		System.out.println("RESTORE: " + restore);
 		this.appInformation.put(Dictionary.TOMCAT_ROOT, tomcatRoot == null ? "" : tomcatRoot.getPath());
 		this.appInformation.put(Dictionary.DEBUG_USER, String.valueOf(Helpers.isTruthy(fConfig.getInitParameter("debug.user"))));
 		this.appInformation.put(Dictionary.RESTORE_FOLDER, restore == null ? "" : restore.getPath());
