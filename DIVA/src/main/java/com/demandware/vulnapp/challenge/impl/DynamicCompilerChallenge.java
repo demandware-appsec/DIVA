@@ -186,7 +186,7 @@ public class DynamicCompilerChallenge extends AbstractChallenge {
 		StandardJavaFileManager fileManager = compiler.getStandardFileManager(compilerListener, Locale.ENGLISH, null);
 
 		//specify classes output folder
-		List<String> options = Arrays.asList("-d", this.classOutputFolder.getAbsolutePath());
+		List<String> options = Arrays.asList("-Xlint:unchecked","-d", this.classOutputFolder.getAbsolutePath());
 		JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, compilerListener, options, null, files);
 
 		if (!task.call() || compilerListener.hasReport()) {
