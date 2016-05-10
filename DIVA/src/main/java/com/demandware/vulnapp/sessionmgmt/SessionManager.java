@@ -133,11 +133,11 @@ public class SessionManager {
 		return false;
 	}
 	
-	public List<SessionStorage> getSessionsForUser(User usr){
+	public List<SessionStorage> getSessionsForUsername(String userName){
 		List<SessionStorage> stores = new ArrayList<SessionStorage>();
-	
+		
 		for(SessionStorage store : this.sessionMap.values()){
-			if(store.getUser().equals(usr)){
+			if(store.getUser().getUserName().equals(userName)){
 				stores.add(store);
 			}
 		}

@@ -182,12 +182,8 @@ public class XSSChallenge extends AbstractChallenge {
 	 * generate a flag for a given user based on their name
 	 */
 	private String generateFlagForRequestedUser(String userName) {
-		User usr = UserManager.getInstance().searchForUser(userName);
-		if (usr == null) {
-			return "";
-		}
-		List<SessionStorage> stores = SessionManager.getInstance().getSessionsForUser(usr);
-		if (stores.size() < 1) {
+		List<SessionStorage> stores = SessionManager.getInstance().getSessionsForUsername(userName);
+		if (stores.isEmpty()) {
 			return "";
 		}
 		StringBuilder sb = new StringBuilder();
