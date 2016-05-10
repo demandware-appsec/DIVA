@@ -124,6 +124,9 @@ public class SessionManager {
 		return this.sessionMap.get(token);
 	}
 	
+	/**
+	 * true if the user has a session 
+	 */
 	public boolean isUserActive(User usr){
 		for (SessionStorage store : this.sessionMap.values()){
 			if(store.getUser().equals(usr)){
@@ -133,6 +136,9 @@ public class SessionManager {
 		return false;
 	}
 	
+	/** 
+	 * given a username, return all associated sessions
+	 */
 	public List<SessionStorage> getSessionsForUsername(String userName){
 		List<SessionStorage> stores = new ArrayList<SessionStorage>();
 		
@@ -161,6 +167,7 @@ public class SessionManager {
 	private void addSession(SessionStorage store){
 		this.sessionMap.put(store.getToken(), store);
 	}
+	
 	
 	public int getActiveSessions(){
 		int num = 0;

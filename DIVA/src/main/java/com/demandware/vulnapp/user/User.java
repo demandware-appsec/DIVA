@@ -57,6 +57,9 @@ public class User {
 		updatePoints();
 	}
 	
+	/**
+	 * Clears this user of all data and makes it equivalent to deleting and remaking from scratch
+	 */
 	public void resetUser(){
 		setupMap();
 		setAllowedChallenges(ChallengePlan.getInstance().getInitialAllowedChallenges());

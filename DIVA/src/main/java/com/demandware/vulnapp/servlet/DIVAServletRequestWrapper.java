@@ -22,6 +22,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.demandware.vulnapp.challenge.AbstractChallenge;
 import com.demandware.vulnapp.challenge.ChallengeInfo;
 import com.demandware.vulnapp.challenge.ChallengePlan;
@@ -62,11 +64,8 @@ public class DIVAServletRequestWrapper extends HttpServletRequestWrapper{
 	 * @throws IllegalSessionException if a user is attempting to gain access to a challenge that they don't have access to yet
 	 */
 	void setupJSPChallengeData() throws IllegalSessionException{
-		
 		SessionStorage store = getSessionStore();
-		
-		
-		
+
 		String challengeChecksum = Helpers.extractPageNameFromURLString(this.getRequestURI());
 		ChallengeInfo currChall = ChallengePlan.getInstance().getChallengeForLinkValue(challengeChecksum);
 
@@ -127,19 +126,19 @@ public class DIVAServletRequestWrapper extends HttpServletRequestWrapper{
 	
 	private String getClientIpAddr() {  
         String ip = this.getHeader("X-Forwarded-For");  
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+        if (StringUtils.isBlank(ip) || "unknown".equalsIgnoreCase(ip)) {  
             ip = this.getHeader("Proxy-Client-IP");  
         }  
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+        if (StringUtils.isBlank(ip) || "unknown".equalsIgnoreCase(ip)) {  
             ip = this.getHeader("WL-Proxy-Client-IP");  
         }  
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+        if (StringUtils.isBlank(ip) || "unknown".equalsIgnoreCase(ip)) {  
             ip = this.getHeader("HTTP_CLIENT_IP");  
         }  
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+        if (StringUtils.isBlank(ip) || "unknown".equalsIgnoreCase(ip)) {  
             ip = this.getHeader("HTTP_X_FORWARDED_FOR");  
         }  
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {  
+        if (StringUtils.isBlank(ip) || "unknown".equalsIgnoreCase(ip)) {  
             ip = this.getRemoteAddr();  
         }  
         return ip;  

@@ -61,11 +61,17 @@ public class UserManager {
 			this.restoreFolder = new File(loc);
 		}
 	}
-
+	
+	/**
+	 * Only show logins to guest users
+	 */
 	public boolean showLogin(User user){
 		return (user instanceof Guest);
 	}
 	
+	/**
+	 * given a username and password, find an associated user account
+	 */
 	public User searchForUser(String userName, String password) throws AccountException{
 		User user = searchForUser(userName);
 		if(user == null){
@@ -77,6 +83,9 @@ public class UserManager {
 		return user;
 	}
 	
+	/**
+	 * given a username and password, create a new account if the user doesn't exist
+	 */
 	public User makeNewUser(String userName, String password) throws AccountException{
 		if(Helpers.isBlank(userName)){
 			throw new AccountException(AccountStatus.USERNAME_BLANK);
@@ -92,6 +101,9 @@ public class UserManager {
 		return user;
 	}
 	
+	/**
+	 * return a user by username
+	 */
 	public User searchForUser(String userName){
 		User user = null;
 		for(User usr : this.currentUsers){
@@ -104,6 +116,9 @@ public class UserManager {
 		return user;
 	}
 	
+	/**
+	 * create a "debug" user with all challenges available.
+	 */
 	public void makeDebugUser() {
 		boolean done = false;
 		while(!done){
@@ -129,6 +144,9 @@ public class UserManager {
 		return this.debugUser;
 	}
 	
+	/**
+	 * make fake users
+	 */
 	private void makeChallengerUsers(){
 		for(ChallengerUser usr : ChallengerUser.values()){
 			usr.makeChallengerUser();
