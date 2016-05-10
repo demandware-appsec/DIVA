@@ -6,7 +6,7 @@ The Demandware Intentionally Vulnerable WebApp is a teaching tool to help those 
 The application is  self-contained and doesn't require any setup besides an application server. It contains a database implementation, but is in-memory only and transient.
 
 ##Important Disclaimers
-The code contained in this application is intentionally terrible. Almost no part of this code base should be used in any other applications including side projects. The entire codebase is riddled with vulnerabilities even outside of the actual challenges (hint hint). 
+The code contained in this application is intentionally terrible. Almost no part of this code base should be used in any other applications including side projects. The entire codebase is riddled with vulnerabilities even outside of the actual challenges (hint hint). It is lightly commented to provide only bare minimum sense of classes and some methods (you'll find out why).
 The web application should not be deployed on any server containing any important information (docker is used for separation between docker image and host). Futhermore, if this application is used in any kind of multi-user challenge, networking and access to and from the hosting server should be thoroughly restricted. It should be assumed that players will gain full access to the host and will be able to do anything they wish on it.
 
 ##Installation

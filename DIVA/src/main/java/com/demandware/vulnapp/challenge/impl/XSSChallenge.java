@@ -45,8 +45,6 @@ import com.demandware.vulnapp.servlet.Dictionary;
 import com.demandware.vulnapp.servlet.DivaApp;
 import com.demandware.vulnapp.sessionmgmt.SessionManager;
 import com.demandware.vulnapp.sessionmgmt.SessionStorage;
-import com.demandware.vulnapp.user.User;
-import com.demandware.vulnapp.user.UserManager;
 import com.demandware.vulnapp.util.Helpers;
 import com.demandware.vulnapp.util.SecureRandomUtil;
 import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
