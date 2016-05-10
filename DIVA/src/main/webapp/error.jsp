@@ -9,6 +9,8 @@
 <meta name="generator" content="Bootply" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1">
+<jsp:include page="jspincludes/include_head.jsp" flush="true"></jsp:include>
+
 </head>
 <body>
 

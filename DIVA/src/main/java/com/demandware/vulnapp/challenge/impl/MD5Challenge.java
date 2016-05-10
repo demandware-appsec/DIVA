@@ -105,8 +105,8 @@ public class MD5Challenge extends AbstractChallenge {
 			if(war == null){
 				war = Helpers.findFile(root, "DIVA.war");
 			}
-			System.out.println("Copying War from " + war.getAbsolutePath());
 			if(war != null){
+				System.out.println("Copying War from " + war.getAbsolutePath());
 				try(InputStream is = new BufferedInputStream(new Base64InputStream(new FileInputStream(war), true)); 
 					BufferedWriter bw = new BufferedWriter(new FileWriter(this.b64WarLocation))){
 					
