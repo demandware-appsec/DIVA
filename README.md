@@ -24,7 +24,7 @@ docker pull dwreappsec/diva_ctf
 Then access your docker image ip on port 9000.
 
 ### Dockerfile manual
-Clone this repository and navigate execute the Dockerfile from this repository
+Clone this repository and execute the Dockerfile from this repository
 ```
 docker build -r dwreappsec/diva_ctf Dockerfile
 ```
