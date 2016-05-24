@@ -1,4 +1,5 @@
 DIVA/.settings
-DIVA.war
+*.war
 *.class
 DIVA/target
+DIVA/.project
