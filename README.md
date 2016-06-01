@@ -16,7 +16,7 @@ The code contained in this application is intentionally terrible. Almost no part
 The web application should not be deployed on any server containing any important information (docker is used for separation between docker image and host). Futhermore, if this application is used in any kind of multi-user challenge, networking and access to and from the hosting server should be thoroughly restricted. It should be assumed that players will gain full access to the host and will be able to do anything they wish on it.
 
 ## Installation
-### Docker image from hub
+### Docker image from hub - Coming Soon!
 Execute this command to pull from docker hub
 ```
 docker pull dwreappsec/diva_ctf
