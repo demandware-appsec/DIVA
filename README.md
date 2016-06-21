@@ -1,4 +1,5 @@
 # DIVA
+[![analytics](http://www.google-analytics.com/collect?v=1&t=pageview&tid=UA-79686240-1&cid=5bc8d9b9-99b3-4646-b434-81d5d4479ff3&dl=https%3A%2F%2Fgithub.com%2Fdemandware-appsec%2FDIVA)]()
 
 ## Overview
 The Demandware Intentionally Vulnerable WebApp is a teaching tool to help those interested in security test their skills on increasingly tough challenges. The game is run as a CTF, or Capture the Flag, where users must find randomly generated flags for each challenge in order to progress. There are a total of 20 challenges ranging from very simple HTML editing to "decrypting" an AES string. The applications has further instructions and suggestions for playing the game once started.
