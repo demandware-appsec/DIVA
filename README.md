@@ -16,12 +16,12 @@ The code contained in this application is intentionally terrible. Almost no part
 The web application should not be deployed on any server containing any important information (docker is used for separation between docker image and host). Futhermore, if this application is used in any kind of multi-user challenge, networking and access to and from the hosting server should be thoroughly restricted. It should be assumed that players will gain full access to the host and will be able to do anything they wish on it.
 
 ## Installation
-### Docker image from hub - Coming Soon!
-Execute this command to pull from docker hub
+### Docker image from Hub 
+
+Execute this command to pull from the [Docker Hub Site](https://hub.docker.com/r/dwreappsec/diva_ctf/)
 ```
 docker pull dwreappsec/diva_ctf
 ```
-Then access your docker image ip on port 9000.
 
 ### Dockerfile manual
 Clone this repository and execute the Dockerfile from this repository
