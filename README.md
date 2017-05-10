@@ -26,7 +26,7 @@ docker pull dwreappsec/diva_ctf
 ### Dockerfile manual
 Clone this repository and execute the Dockerfile from this repository
 ```
-docker build -r dwreappsec/diva_ctf Dockerfile
+docker build .
 ```
 
 ### Running docker image
