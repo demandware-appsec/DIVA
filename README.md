@@ -31,9 +31,14 @@ docker build .
 
 ### Running docker image
 ```
-docker run -d -p 8080:8080 dwreappsec/diva_ctf  (You can also add --rm if you want the image destroyed on stop)
+docker run -d -p 8080:8080 --name diva dwreappsec/diva_ctf
 ```
 Then access your docker image ip on port 8080 to begin. This is likely http://localhost:8080
+You may also stop/start your image using the name diva from above. This allows you to register a username and return to your saved progress
+```
+docker stop diva
+docker start diva
+```
 
 ### Maven
 Clone this repository and run 
