@@ -51,11 +51,13 @@ and look in DIVA/target/ for DIVA.war. You may deploy this in any appserver that
 See the [Hints Page](http://demandware-appsec.github.io/DIVA/hints/) for help with specific challenges. Hints for each challenge are on their own pages in rollover text.
 
 ## Using Ocular to CTF 
-1.Install Ocular Distribution (http://ocular.shiftleft.io) . &nbsp; 
+1.Install Ocular Distribution (http://ocular.shiftleft.io) . &nbsp;  
+ 
 2.Update policies to support demandware packages . &nbsp;  
+
 3.Run the following command . &nbsp;  
 ```
-  ./ocular.sh --script scripts/DIVA/diva.sc --params jarFile=[PATH_TO_DIVA_PROJECT]/DIVA/target/DIVA.war
+./ocular.sh --script scripts/DIVA/diva.sc --params jarFile=[PATH_TO_DIVA_PROJECT]/DIVA/target/DIVA.war
 ```
 
 ## License
