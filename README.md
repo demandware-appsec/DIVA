@@ -59,7 +59,7 @@ Copyright 2016  Demandware Inc, All Rights Reserved.
 All images used in SQL database are [Creative Commons "No Rights Reserved"](https://creativecommons.org/about/cc0/)
 
 ## Using Ocular to CTF 
-Install Ocular Distribution 
+Install Ocular Distribution (http://ocular.shiftleft.io)
 Update policies to support demandware packages
 Run the following command 
 ```
