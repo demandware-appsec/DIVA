@@ -59,9 +59,9 @@ Copyright 2016  Demandware Inc, All Rights Reserved.
 All images used in SQL database are [Creative Commons "No Rights Reserved"](https://creativecommons.org/about/cc0/)
 
 ## Using Ocular to CTF 
-1.Install Ocular Distribution (http://ocular.shiftleft.io)
-1.Update policies to support demandware packages
-1.Run the following command 
+1.Install Ocular Distribution (http://ocular.shiftleft.io) . 
+2.Update policies to support demandware packages . 
+3.Run the following command . 
 ```
 ./ocular.sh --script scripts/DIVA/diva.sc --params jarFile=[PATH_TO_DIVA_PROJECT]/DIVA/target/DIVA.war
 ```
