@@ -1,7 +1,3 @@
-import $file.^.common.taint_tags
-import $file.^.common.traces
-import $file.^.common.token_patterns
-
 import java.io.File
 
 def mkdirs(path: List[String]) = // return true if path was created
