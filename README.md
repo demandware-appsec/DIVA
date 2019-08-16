@@ -53,7 +53,7 @@ See the [Hints Page](http://demandware-appsec.github.io/DIVA/hints/) for help wi
 ## Using Ocular to CTF 
 1.Install [Ocular Distribution](http://ocular.shiftleft.io) . &nbsp;  
  
-2.Update policies to support demandware packages . &nbsp;  
+2.Update policies to enable demandware packages . &nbsp;  
 
 3.Run the following command . &nbsp;  
 ```
