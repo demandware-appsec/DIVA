@@ -58,3 +58,10 @@ Copyright 2016  Demandware Inc, All Rights Reserved.
 ### Images
 All images used in SQL database are [Creative Commons "No Rights Reserved"](https://creativecommons.org/about/cc0/)
 
+## Using Ocular to CTF 
+Install Ocular Distribution 
+Update policies to support demandware packages
+Run the following command 
+```
+./ocular.sh --script scripts/DIVA/diva.sc --params jarFile=[PATH_TO_DIVA_PROJECT]/DIVA/target/DIVA.war
+```
